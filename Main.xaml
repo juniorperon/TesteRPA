@@ -1,0 +1,872 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,5422.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="820.8,5357.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="var_dtSecao" />
+      <Variable x:TypeArguments="x:String" Name="var_strUrl" />
+      <Variable x:TypeArguments="x:String" Name="var_strCodigoSecao">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">A</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="var_intContador" />
+      <Variable x:TypeArguments="sd:DataTable" Name="var_dtGrupos" />
+      <Variable x:TypeArguments="x:String" Name="var_strCodigoGrupo" />
+      <Variable x:TypeArguments="x:String" Name="var_strDescricaoGrupo" />
+      <Variable x:TypeArguments="sd:DataTable" Name="var_dtClasses" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="var_listarTabelaClasse" />
+      <Variable x:TypeArguments="x:String" Name="var_strCodigoClasse" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="var_listarTabelaGrupo" />
+      <Variable x:TypeArguments="x:String" Name="var_strDescricaoSecao" />
+      <Variable x:TypeArguments="x:String" Name="var_strNumberDivision" />
+      <Variable x:TypeArguments="x:String" Name="var_strDescricaoClasse" />
+      <Variable x:TypeArguments="sd:DataTable" Name="var_dtTabelaDivisoes" />
+      <Variable x:TypeArguments="x:Double" Name="var_intNumberDivision" />
+      <Variable x:TypeArguments="sd:DataTable" Name="var_dtSubclasse" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="var_listarTabelaSubClasse" />
+      <Variable x:TypeArguments="x:String" Name="var_strCodigoSubclasse" />
+      <Variable x:TypeArguments="x:String" Name="var_strDescricaoSubclasse" />
+      <Variable x:TypeArguments="x:String" Name="var_strCodigoDivisao" />
+      <Variable x:TypeArguments="sd:DataTable" Name="var_dtDivisao" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="var_listarTabelaDivisao" />
+      <Variable x:TypeArguments="x:String" Name="var_strDescricaoDivisao" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="779.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Inicio Teste RPA&quot;]" />
+    <Sequence sap2010:Annotation.AnnotationText="Neste caso seria interessante colocar em uma fila" DisplayName="Sequence - leitura planilha de seções" sap:VirtualizedContainerService.HintSize="779.2,112.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Leitura da planilha para escolher seções&quot;]" />
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="ARQUIVOS\Secao.xlsx">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,152.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelReadRange AddHeaders="True" DataTable="[var_dtSecao]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Plan1">
+                <ui:ExcelReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ExcelReadRange.Range>
+              </ui:ExcelReadRange>
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+      </ui:ExcelApplicationScope>
+    </Sequence>
+    <Sequence DisplayName="Sequence - criar tabela" sap:VirtualizedContainerService.HintSize="779.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="var_dtTabelaPrincipal" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Criar tabela para adicionar itens encontrados&quot;]" />
+      <ui:BuildDataTable DataTable="[var_dtTabelaPrincipal]" DisplayName="Build Data " sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Código_x0020_Seção&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Seção&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Código_x0020_Divisão&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Divisão&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Código_x0020_Grupo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Grupo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Código_x0020_Classe&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Classe&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Código_x0020_Subclasse&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Subclasse&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    </Sequence>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[var_dtSecao]" DisplayName="For Each Row in Data Table - faz o processo por seção" sap:VirtualizedContainerService.HintSize="779.2,4870.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Secao" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="745.6,4754.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="704,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Iniciando processo: &quot; + Secao.Item(&quot;Secao&quot;).ToString]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <Assign sap:VirtualizedContainerService.HintSize="704,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[var_strCodigoSecao]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Secao.Item("Secao").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="704,52.8" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Chrome">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:KillProcess>
+            <Assign DisplayName="Assign URL Site IBGE" sap:VirtualizedContainerService.HintSize="704,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[var_strUrl]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">https://cnae.ibge.gov.br/?option=com_cnae&amp;view=estrutura&amp;Itemid=6160&amp;tipo=cnae&amp;versao_classe=7.0.0&amp;versao_subclasse=</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser - abrir o site do IBGE" sap:VirtualizedContainerService.HintSize="704,4236" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Private="False" Url="[var_strUrl]">
+              <ui:OpenBrowser.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="670.4,4133.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="628.8,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'TD' - DESCRICAO SEÇÃO" sap:VirtualizedContainerService.HintSize="628.8,107.2" sap2010:WorkflowViewState.IdRef="GetValue_7">
+                      <ui:GetValue.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03adca43-7329-4993-9d0a-2c72402b7b65" InformativeScreenshot="cf24c2fa809c71c13d1286c8c810e483" Selector="[String.Format(&quot;&lt;webctrl parentid='tbEstrutura' tag='{0}' /&gt;&lt;nav up='2' /&gt;&lt;webctrl isleaf='1' tag='TD' colName='Denominação' /&gt;&quot;, var_strCodigoSecao)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetValue.Target>
+                      <ui:GetValue.Value>
+                        <OutArgument x:TypeArguments="x:String">[var_strDescricaoSecao]</OutArgument>
+                      </ui:GetValue.Value>
+                    </ui:GetValue>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Descrição da Seção: &quot; + var_strDescricaoSecao]" />
+                    <Sequence sap2010:Annotation.AnnotationText="tratativa para verificar quantas divisões possuem nessa seção" DisplayName="Sequence - tratativa qtd div" sap:VirtualizedContainerService.HintSize="628.8,128.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text - Pegar valor para loop de divisao" sap:VirtualizedContainerService.HintSize="430.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_8">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1f18a231-0f44-47b0-8f7a-2eb5881bf17e" InformativeScreenshot="6d00691c6dd9cc420945daceb23f452b" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='{0}' colName='Divisões' href='/?view=secao&amp;amp;tipo=cnae&amp;amp;versaoclasse=7&amp;amp;secao={0}' parentid='tbEstrutura' /&gt;&quot;, var_strCodigoSecao)]">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[var_strNumberDivision]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <ui:Replace BuilderPattern="\s" sap:VirtualizedContainerService.HintSize="430.4,60" sap2010:WorkflowViewState.IdRef="Replace_1" Input="[var_strNumberDivision]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;WHITESP&quot;,&quot;OperationName&quot;:&quot;Whitespace&quot;,&quot;OperationValue&quot;:&quot;\\s&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\s" RegexOption="IgnoreCase, Compiled" Result="[var_strNumberDivision]">
+                        <ui:Replace.Replacement>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:Replace.Replacement>
+                      </ui:Replace>
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                        <ui:MultipleAssign.AssignOperations>
+                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:Double">[var_intNumberDivision]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:Double">[Convert.toDouble(var_strNumberDivision.Remove(0,4))]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:Int32">[var_intContador]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(var_strNumberDivision.Remove(2,4))]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                          </scg:List>
+                        </ui:MultipleAssign.AssignOperations>
+                      </ui:MultipleAssign>
+                    </Sequence>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /?view=secao&amp;tipo=cn...'" sap:VirtualizedContainerService.HintSize="628.8,107.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c13f7de-8c0a-4d27-9363-0741eab4f87d" InformativeScreenshot="fa1684273476441999a3f43d03dc838b" Selector="[String.Format(&quot;&lt;webctrl parentid='tbEstrutura' tag='{0}' colName='Seção' /&gt;&quot;, var_strCodigoSecao)]">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="DIVISÃO&#xD;&#xA;" Condition="[var_intContador&lt;=var_intNumberDivision]" DisplayName="While - enquanto contador menor que divisão ir clicando nos itens da divisão" sap:VirtualizedContainerService.HintSize="628.8,3382.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+                      <ui:InterruptibleWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="593.6,3171.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="552,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[var_strCodigoDivisao]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[(var_intContador.ToString).PadLeft(2,CChar("0"))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="552,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="85a7f642-6dec-489d-8cfa-4c25af63fa83" Version="V1">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[var_dtDivisao]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_5" MaximumResults="0" Version="V1">
+                                    <uix:NExtractData.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="409, 562, 1075, 158" FriendlyName="'Seção: A'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="2d40bf8f-a7d2-49aa-93b1-40b9cdfbf325" InformativeScreenshot="930e3e55842cccba6af53c243c42380e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                    </uix:NExtractData.Target>
+                                  </uix:NExtractData>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADxSURBVDhPpdIxDgFBGAVgV1ChoFZxBJXCDUhEIdlSJSq1S3AJIiJZhUI0m+gdQL2ixDLe2+zIy2QKG5t8G/v/5s3s7BSMMX/xFvPwFvP4XrP5cQ/G4wRreX7DBYJvAB6qWUMH0hWa8JCaFWvA2GnSDVpQl5pKNCBymmeYwhb6wJVon6I0AD9qWYEz7mAIZUiA9Tu0YQFL0bUBPVhJg3/swBNsQBEYHAInYr1iA9zlE5c8gA1MgK+k/QNf3QbYpbq4edxEO6MaaUDsNImfrQG+zXtBSQMC4MHQc8CDwwOkA62Qg3mlAbz9w1vMw1v8nSl8AF/uttd0vyW9AAAAAElFTkSuQmCC" InformativeScreenshot="5e143ac97443c32877fa6ba5da9c396a.png" Selector="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" Url="[&quot;https://cnae.ibge.gov.br/?view=secao&amp;tipo=cnae&amp;versao=10&amp;secao=&quot;+var_strCodigoSecao]" />
+                            </uix:NApplicationCard.TargetApp>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                          <ui:FilterDataTable DataTable="[var_dtDivisao]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="552,52.8" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[var_dtDivisao]" SelectColumnsMode="Keep">
+                            <ui:FilterDataTable.Filters>
+                              <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="16">
+                                <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["0"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["1"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["3"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["4"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["5"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["6"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["7"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["8"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                                <ui:FilterOperationArgument BooleanOperator="Or" Operator="LT">
+                                  <ui:FilterOperationArgument.Column>
+                                    <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                  </ui:FilterOperationArgument.Column>
+                                  <ui:FilterOperationArgument.Operand>
+                                    <InArgument x:TypeArguments="x:String">["9"]</InArgument>
+                                  </ui:FilterOperationArgument.Operand>
+                                </ui:FilterOperationArgument>
+                              </scg:List>
+                            </ui:FilterDataTable.Filters>
+                            <ui:FilterDataTable.SelectColumns>
+                              <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                <x:Null />
+                              </scg:List>
+                            </ui:FilterDataTable.SelectColumns>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:FilterDataTable>
+                          <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="552,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="scg:List(x:String)">[var_listarTabelaDivisao]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="scg:List(x:String)">[var_dtDivisao.AsEnumerable().Select(function(a) a("Column-2").ToString).ToList()]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="DIVISAO" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="552,2692.8" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[var_listarTabelaDivisao]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="Divisao" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="516.8,2536.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign DisplayName="Assign - separar codigo e grupo" sap:VirtualizedContainerService.HintSize="475.2,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[var_strCodigoDivisao]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[Divisao.Split(" "c)(0)]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="475.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;Extraindo Divisao: &quot; + var_strCodigoDivisao]" />
+                                  <Assign DisplayName="Assign - pegar apenas a descricao" sap:VirtualizedContainerService.HintSize="475.2,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[var_strDescricaoDivisao]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[Divisao.Remove(0,var_strCodigoDivisao.count).TrimStart]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="475.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Descrição do grupo: &quot; + var_strDescricaoGrupo]" />
+                                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="475.2,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[&quot;https://cnae.ibge.gov.br/?view=divisao&amp;tipo=cnae&amp;versao=7&amp;divisao=&quot; + var_strCodigoDivisao]" />
+                                  <Sequence sap2010:Annotation.AnnotationText="GRUPOS" DisplayName="Sequence - tabela grupos" sap:VirtualizedContainerService.HintSize="475.2,1878.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="433.6,468.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="3799a6c9-8c17-4a41-8665-d3d4cc52ce22" Version="V1" WindowResize="Maximize">
+                                      <uix:NApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="x:Object">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[var_dtGrupos]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" Version="V1">
+                                              <uix:NExtractData.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="49, 400, 1075, 351" FriendlyName="'Seção: A'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="42f4aed2-7a49-4bee-92c6-22a2eb4df07b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                              </uix:NExtractData.Target>
+                                            </uix:NExtractData>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </uix:NApplicationCard.Body>
+                                      <uix:NApplicationCard.TargetApp>
+                                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADxSURBVDhPpdIxDgFBGAVgV1ChoFZxBJXCDUhEIdlSJSq1S3AJIiJZhUI0m+gdQL2ixDLe2+zIy2QKG5t8G/v/5s3s7BSMMX/xFvPwFvP4XrP5cQ/G4wRreX7DBYJvAB6qWUMH0hWa8JCaFWvA2GnSDVpQl5pKNCBymmeYwhb6wJVon6I0AD9qWYEz7mAIZUiA9Tu0YQFL0bUBPVhJg3/swBNsQBEYHAInYr1iA9zlE5c8gA1MgK+k/QNf3QbYpbq4edxEO6MaaUDsNImfrQG+zXtBSQMC4MHQc8CDwwOkA62Qg3mlAbz9w1vMw1v8nSl8AF/uttd0vyW9AAAAAElFTkSuQmCC" InformativeScreenshot="f165d8cb2de6190419d47c625f5c1a0e.png" Selector="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" Url="[&quot;https://cnae.ibge.gov.br/?view=divisao&amp;tipo=cnae&amp;versao=7&amp;divisao=&quot; + var_intContador.ToString.padleft(2,CChar(“0”))]" />
+                                      </uix:NApplicationCard.TargetApp>
+                                    </uix:NApplicationCard>
+                                    <ui:FilterDataTable DataTable="[var_dtGrupos]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="433.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[var_dtGrupos]" SelectColumnsMode="Keep">
+                                      <ui:FilterDataTable.Filters>
+                                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                          <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                            <ui:FilterOperationArgument.Column>
+                                              <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                            </ui:FilterOperationArgument.Column>
+                                            <ui:FilterOperationArgument.Operand>
+                                              <InArgument x:TypeArguments="x:String">[(var_intContador.ToString+".").PadLeft(3,CChar("0"))]</InArgument>
+                                            </ui:FilterOperationArgument.Operand>
+                                          </ui:FilterOperationArgument>
+                                        </scg:List>
+                                      </ui:FilterDataTable.Filters>
+                                      <ui:FilterDataTable.SelectColumns>
+                                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                          <x:Null />
+                                        </scg:List>
+                                      </ui:FilterDataTable.SelectColumns>
+                                    </ui:FilterDataTable>
+                                    <Assign DisplayName="Assign Lista de Linhas" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="scg:List(x:String)">[var_listarTabelaGrupo]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="scg:List(x:String)">[var_dtGrupos.AsEnumerable().Select(function(a) a("Column-2").ToString).ToList()]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each - para cada item do grupo" sap:VirtualizedContainerService.HintSize="433.6,943.2" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[var_listarTabelaGrupo]">
+                                      <ui:ForEach.Body>
+                                        <ActivityAction x:TypeArguments="x:String">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:String" Name="Grupos" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,818.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign DisplayName="Assign - separar codigo e grupo" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[var_strCodigoGrupo]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[Grupos.Split(" "c)(0)]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Extraindo Grupo: &quot; + var_strCodigoGrupo]" />
+                                            <Assign DisplayName="Assign - pegar apenas a descricao" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[var_strDescricaoGrupo]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[grupos.Remove(0,var_strCodigoGrupo.count).TrimStart]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Descrição do grupo: &quot; + var_strDescricaoGrupo]" />
+                                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /?view=grupo&amp;tipo=cn...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                              <ui:Click.CursorPosition>
+                                                <ui:CursorPosition Position="Center">
+                                                  <ui:CursorPosition.OffsetX>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:CursorPosition.OffsetX>
+                                                  <ui:CursorPosition.OffsetY>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:CursorPosition.OffsetY>
+                                                </ui:CursorPosition>
+                                              </ui:Click.CursorPosition>
+                                              <ui:Click.Target>
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b93a08b3-355c-4664-9783-8ab7815a13d7" InformativeScreenshot="f7188a97d2e0611ca3b6f95fb1bd25a9" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' /&gt;&quot;, var_strCodigoGrupo)]">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                  <ui:Target.WaitForReady>
+                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                  </ui:Target.WaitForReady>
+                                                </ui:Target>
+                                              </ui:Click.Target>
+                                            </ui:Click>
+                                            <Sequence sap2010:Annotation.AnnotationText="CLASSE&#xD;&#xA;" DisplayName="Sequence - classe" sap:VirtualizedContainerService.HintSize="333.6,112.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: IBGE | Concla | Busca online" sap:VirtualizedContainerService.HintSize="508.8,772.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" OpenMode="IfNotOpen" ScopeGuid="301a51a2-b3a5-462c-a792-7452e0e5675f" Version="V1">
+                                                <uix:NApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="x:Object">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,556" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[var_dtClasses]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" MaximumResults="0" ScopeIdentifier="301a51a2-b3a5-462c-a792-7452e0e5675f" Version="V1">
+                                                        <uix:NExtractData.Target>
+                                                          <uix:TargetAnchorable DesignTimeRectangle="409, 437, 1075, 390" FriendlyName="'Seção: A'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="75d58733-6ef1-4ef4-a851-36951bc64003" InformativeScreenshot="fb42619f7f18e4b2403a8e49c1f407c6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                                        </uix:NExtractData.Target>
+                                                      </uix:NExtractData>
+                                                      <ui:FilterDataTable DataTable="[var_dtClasses]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="433.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[var_dtClasses]" SelectColumnsMode="Keep">
+                                                        <ui:FilterDataTable.Filters>
+                                                          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                                            <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                                              <ui:FilterOperationArgument.Column>
+                                                                <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                                              </ui:FilterOperationArgument.Column>
+                                                              <ui:FilterOperationArgument.Operand>
+                                                                <InArgument x:TypeArguments="x:String">["-"]</InArgument>
+                                                              </ui:FilterOperationArgument.Operand>
+                                                            </ui:FilterOperationArgument>
+                                                          </scg:List>
+                                                        </ui:FilterDataTable.Filters>
+                                                        <ui:FilterDataTable.SelectColumns>
+                                                          <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                                            <x:Null />
+                                                          </scg:List>
+                                                        </ui:FilterDataTable.SelectColumns>
+                                                      </ui:FilterDataTable>
+                                                      <Assign DisplayName="Assign Lista de Linhas" sap:VirtualizedContainerService.HintSize="433.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="scg:List(x:String)">[var_listarTabelaClasse]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="scg:List(x:String)">[var_dtClasses.AsEnumerable().Select(function(a) a("Column-2").ToString).ToList()]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </uix:NApplicationCard.Body>
+                                                <uix:NApplicationCard.TargetApp>
+                                                  <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADxSURBVDhPpdIxDgFBGAVgV1ChoFZxBJXCDUhEIdlSJSq1S3AJIiJZhUI0m+gdQL2ixDLe2+zIy2QKG5t8G/v/5s3s7BSMMX/xFvPwFvP4XrP5cQ/G4wRreX7DBYJvAB6qWUMH0hWa8JCaFWvA2GnSDVpQl5pKNCBymmeYwhb6wJVon6I0AD9qWYEz7mAIZUiA9Tu0YQFL0bUBPVhJg3/swBNsQBEYHAInYr1iA9zlE5c8gA1MgK+k/QNf3QbYpbq4edxEO6MaaUDsNImfrQG+zXtBSQMC4MHQc8CDwwOkA62Qg3mlAbz9w1vMw1v8nSl8AF/uttd0vyW9AAAAAElFTkSuQmCC" InformativeScreenshot="86256fb7da1591edf30ccb21028787bb.png" Selector="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" Url="[&quot;https://cnae.ibge.gov.br/?view=grupo&amp;tipo=cnae&amp;versao=7&amp;grupo=&quot;+var_strCodigoGrupo.Replace(&quot;.&quot;,&quot;&quot;)]" />
+                                                </uix:NApplicationCard.TargetApp>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NApplicationCard>
+                                              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each - para cada classe" sap:VirtualizedContainerService.HintSize="508.8,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[var_listarTabelaClasse]">
+                                                <ui:ForEach.Body>
+                                                  <ActivityAction x:TypeArguments="x:String">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="x:String" Name="Classe" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign DisplayName="Assign - separar codigo e classe" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[var_strCodigoClasse]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[Classe.Split(" "c)(0)]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Extraindo Classe: &quot; + var_strCodigoClasse]" />
+                                                      <Assign DisplayName="Assign - pegar apenas a descricao" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:String">[var_strDescricaoClasse]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:String">[Classe.Remove(0,var_strCodigoClasse.count).TrimStart]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Descrição da Classe: &quot; + var_strDescricaoClasse]" />
+                                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /?view=classe&amp;tipo=c...'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                        <ui:Click.CursorPosition>
+                                                          <ui:CursorPosition Position="Center">
+                                                            <ui:CursorPosition.OffsetX>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:CursorPosition.OffsetX>
+                                                            <ui:CursorPosition.OffsetY>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:CursorPosition.OffsetY>
+                                                          </ui:CursorPosition>
+                                                        </ui:Click.CursorPosition>
+                                                        <ui:Click.Target>
+                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="94b76b09-348e-4062-8cbe-7c06646378e5" InformativeScreenshot="bbde867eae90dbcedf131da9f241266b" Selector="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='{0}' /&gt;&quot;, var_strCodigoClasse)]">
+                                                            <ui:Target.TimeoutMS>
+                                                              <InArgument x:TypeArguments="x:Int32" />
+                                                            </ui:Target.TimeoutMS>
+                                                            <ui:Target.WaitForReady>
+                                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                            </ui:Target.WaitForReady>
+                                                          </ui:Target>
+                                                        </ui:Click.Target>
+                                                      </ui:Click>
+                                                      <Sequence sap2010:Annotation.AnnotationText="SUBCLASSES&#xD;&#xA;" DisplayName="Sequence - Subclasse" sap:VirtualizedContainerService.HintSize="333.6,112.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="508.8,1690.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" OpenMode="IfNotOpen" ScopeGuid="e00a3f77-07d3-429f-88c3-b97ea9156d45" Version="V1">
+                                                          <uix:NApplicationCard.Body>
+                                                            <ActivityAction x:TypeArguments="x:Object">
+                                                              <ActivityAction.Argument>
+                                                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                              </ActivityAction.Argument>
+                                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1473.6" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[var_dtSubclasse]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_4" MaximumResults="0" Version="V1">
+                                                                  <uix:NExtractData.Target>
+                                                                    <uix:TargetAnchorable DesignTimeRectangle="409, 583, 1075, 313" FriendlyName="'Seção: A'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="ff52a00b-fcc0-4879-9763-059fb7f46090" InformativeScreenshot="b4536a90ff968eb91fb1f9a19b128eed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                                                                  </uix:NExtractData.Target>
+                                                                </uix:NExtractData>
+                                                                <ui:FilterDataTable DataTable="[var_dtSubclasse]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="433.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[var_dtSubclasse]" SelectColumnsMode="Keep">
+                                                                  <ui:FilterDataTable.Filters>
+                                                                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                                                      <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                                                        <ui:FilterOperationArgument.Column>
+                                                                          <InArgument x:TypeArguments="x:String">["Column-2"]</InArgument>
+                                                                        </ui:FilterOperationArgument.Column>
+                                                                        <ui:FilterOperationArgument.Operand>
+                                                                          <InArgument x:TypeArguments="x:String">["/"]</InArgument>
+                                                                        </ui:FilterOperationArgument.Operand>
+                                                                      </ui:FilterOperationArgument>
+                                                                    </scg:List>
+                                                                  </ui:FilterDataTable.Filters>
+                                                                  <ui:FilterDataTable.SelectColumns>
+                                                                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                                                      <x:Null />
+                                                                    </scg:List>
+                                                                  </ui:FilterDataTable.SelectColumns>
+                                                                </ui:FilterDataTable>
+                                                                <Assign DisplayName="Assign Lista de Linhas" sap:VirtualizedContainerService.HintSize="433.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="scg:List(x:String)">[var_listarTabelaSubClasse]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="scg:List(x:String)">[var_dtSubclasse.AsEnumerable().Select(function(a) a("Column-2").ToString).ToList()]</InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,877.6" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[var_listarTabelaSubClasse]">
+                                                                  <ui:ForEach.Body>
+                                                                    <ActivityAction x:TypeArguments="x:String">
+                                                                      <ActivityAction.Argument>
+                                                                        <DelegateInArgument x:TypeArguments="x:String" Name="Subclasse" />
+                                                                      </ActivityAction.Argument>
+                                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,751.2" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                                        <Sequence.Variables>
+                                                                          <Variable x:TypeArguments="sd:DataTable" Name="var_dtTabelaCNAE" />
+                                                                        </Sequence.Variables>
+                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                          </scg:Dictionary>
+                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                        <Assign DisplayName="Assign - separar codigo e subclasse" sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:String">[var_strCodigoSubclasse]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:String">[Subclasse.Split(" "c)(0)]</InArgument>
+                                                                          </Assign.Value>
+                                                                        </Assign>
+                                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Extraindo Subclasse: &quot; + var_strCodigoSubclasse]" />
+                                                                        <Assign DisplayName="Assign - pegar apenas a descricao" sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:String">[var_strDescricaoSubclasse]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:String">[Subclasse.Remove(0,var_strCodigoSubclasse.count).TrimStart]</InArgument>
+                                                                          </Assign.Value>
+                                                                        </Assign>
+                                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;Descrição da Subclasse: &quot; + var_strDescricaoSubclasse]" />
+                                                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{var_strCodigoSecao, var_strDescricaoSecao, var_strCodigoDivisao, var_strDescricaoDivisao, var_strCodigoGrupo, var_strDescricaoGrupo, var_strCodigoClasse, var_strDescricaoClasse, var_strCodigoSubclasse, var_strDescricaoSubclasse}]" DataTable="[var_dtTabelaCNAE]" DisplayName=" inserindo na tabela cada linha do item " sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                                                      </Sequence>
+                                                                    </ActivityAction>
+                                                                  </ui:ForEach.Body>
+                                                                </ui:ForEach>
+                                                              </Sequence>
+                                                            </ActivityAction>
+                                                          </uix:NApplicationCard.Body>
+                                                          <uix:NApplicationCard.TargetApp>
+                                                            <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADxSURBVDhPpdIxDgFBGAVgV1ChoFZxBJXCDUhEIdlSJSq1S3AJIiJZhUI0m+gdQL2ixDLe2+zIy2QKG5t8G/v/5s3s7BSMMX/xFvPwFvP4XrP5cQ/G4wRreX7DBYJvAB6qWUMH0hWa8JCaFWvA2GnSDVpQl5pKNCBymmeYwhb6wJVon6I0AD9qWYEz7mAIZUiA9Tu0YQFL0bUBPVhJg3/swBNsQBEYHAInYr1iA9zlE5c8gA1MgK+k/QNf3QbYpbq4edxEO6MaaUDsNImfrQG+zXtBSQMC4MHQc8CDwwOkA62Qg3mlAbz9w1vMw1v8nSl8AF/uttd0vyW9AAAAAElFTkSuQmCC" InformativeScreenshot="fc038c797de4a9225aa37d813a0a5d7c.png" Selector="&lt;html app='chrome.exe' title='IBGE | Concla | Busca online' /&gt;" Url="[&quot;https://cnae.ibge.gov.br/?view=classe&amp;tipo=cnae&amp;versao=7&amp;classe=&quot;+var_strCodigoClasse.Replace(&quot;.&quot;,&quot;&quot;).Replace(&quot;-&quot;,&quot;&quot;)]" />
+                                                          </uix:NApplicationCard.TargetApp>
+                                                        </uix:NApplicationCard>
+                                                      </Sequence>
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ui:ForEach.Body>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:ForEach>
+                                            </Sequence>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ForEach.Body>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:ForEach>
+                                  </Sequence>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEach>
+                        </Sequence>
+                      </ui:InterruptibleWhile.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InterruptibleWhile>
+                  </Sequence>
+                </ActivityAction>
+              </ui:OpenBrowser.Body>
+            </ui:OpenBrowser>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
